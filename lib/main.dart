@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nearstuds/homePage.dart';
 import 'package:nearstuds/login.dart';
-import 'package:nearstuds/maps.dart';
+//import 'package:nearstuds/maps.dart';
 import 'package:nearstuds/register.dart';
 import 'package:nearstuds/splash.dart';
 
