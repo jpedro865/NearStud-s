@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => const Splash(),
         '/login': (context) => const Login(),
         '/register': (context) => const Inscription(),
-        '/maps': (context) => const MapsPage(),
+        // '/maps': (context) => const MapsPage(),
         '/homePage': (context) => const HomePage(),
       },
       theme: ThemeData(
