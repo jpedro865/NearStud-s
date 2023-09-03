@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
         '/homePage': (context) => const HomePage(),
       },
       theme: ThemeData(
-        textTheme: GoogleFonts.mulishTextTheme(),
+        textTheme: GoogleFonts.mulishTextTheme(), 
+        
       ),
     );
   }
