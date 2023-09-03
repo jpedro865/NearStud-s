@@ -30,7 +30,7 @@ Widget content(BuildContext context) {
                 BorderRadius.only(bottomRight: Radius.elliptical(75, 75))),
         child: Column(
           children: [
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             Image.asset(
               "assets/logo_fond_vert.png",
               height: 150,
@@ -89,7 +89,7 @@ class BoutonCoRe extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        // Action à effectuer lorsque le bouton est pressé
+        Navigator.of(context).pushNamed("/homePage");
       },
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(240, 60),

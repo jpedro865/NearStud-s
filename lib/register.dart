@@ -93,7 +93,7 @@ class BoutonReg extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        // Action à effectuer lorsque le bouton est pressé
+        Navigator.of(context).pushNamed("/maps");
       },
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(200, 50),
