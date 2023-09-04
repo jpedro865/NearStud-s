@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nearstuds/homePage.dart';
 import 'package:nearstuds/login.dart';
+import 'package:nearstuds/maps.dart';
 //import 'package:nearstuds/maps.dart';
 import 'package:nearstuds/register.dart';
 import 'package:nearstuds/splash.dart';
@@ -22,12 +23,11 @@ class MyApp extends StatelessWidget {
         "/": (context) => const Splash(),
         '/login': (context) => const Login(),
         '/register': (context) => const Inscription(),
-        // '/maps': (context) => const MapsPage(),
+        '/maps': (context) => const MapsPage(),
         '/homePage': (context) => const HomePage(),
       },
       theme: ThemeData(
-        textTheme: GoogleFonts.mulishTextTheme(), 
-        
+        textTheme: GoogleFonts.mulishTextTheme(),
       ),
     );
   }
