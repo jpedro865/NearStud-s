@@ -10,6 +10,11 @@ class MapsPage extends StatefulWidget {
 class _MapsPageState extends State<MapsPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    String GoogleApiKey ="";
+    
+    return Scaffold(
+      appBar: AppBar(backgroundColor: Color.fromARGB(73, 18, 230, 11),),
+      body: ,
+    );
   }
 }

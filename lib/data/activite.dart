@@ -33,20 +33,4 @@ List<Activite> activite = [
       image: "parc.jpg",
       unite: "entrée",
       description: "Amusez-vous dans un parc d'attractions"),
-  Activite(
-      nomActivite: "Cinema",
-      entreprise: "Gaumont",
-      localisation: "Cinéma Star",
-      prix: 11.0,
-      image: "cinema.jpg",
-      unite: "billet",
-      description: "Nouveaux films à l'affiche"),
-  Activite(
-      nomActivite: "Zoo",
-      entreprise: "Zoo Paradise",
-      localisation: "Zooville",
-      prix: 18.0,
-      image: "zoo.jpg",
-      unite: "entrée",
-      description: "Découvrez la faune du monde entier"),
 ];
