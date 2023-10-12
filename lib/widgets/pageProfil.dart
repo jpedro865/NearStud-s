@@ -18,7 +18,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mon Profil'),
+        title: Text('Pedro'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
