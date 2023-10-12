@@ -56,3 +56,18 @@ class ProductPage extends StatelessWidget {
               ),
             ),
           ),
+
+           Expanded(
+            flex: 4,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'Lieu du produit',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8),
+                Text('Titre du lieu'),
+                SizedBox(height: 16),
