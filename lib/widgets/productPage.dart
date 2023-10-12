@@ -87,4 +87,22 @@ class ProductPage extends StatelessWidget {
                 Text('Titre du lieu'),
                 SizedBox(height: 16),
 
+                Container(
+                  height: 200, // Ajustez la hauteur de la carte selon vos besoins
+                  child: GoogleMap(
+                    initialCameraPosition: CameraPosition(
+                      target: LatLng(37.7749, -122.4194), // Coordonnées de San Francisco, à remplacer par celles du lieu du produit
+                      zoom: 15,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
                 
