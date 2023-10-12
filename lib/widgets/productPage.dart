@@ -43,4 +43,16 @@ class ProductPage extends StatelessWidget {
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),))))
+                  ),
+
+                  SizedBox(height: 16),
+                  ElevatedButton(
+                    onPressed: () {
+                      // Action lorsqu'on appuie sur le bouton "Ajouter au panier"
+                    },
+                    child: Text('Ajouter au panier'),
+                  ),
+                ],
+              ),
+            ),
+          ),
