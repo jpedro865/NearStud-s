@@ -68,12 +68,29 @@ class CategoryCard extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(subtitle),
-                ],
+                ], ListView(
+        children: <Widget>[
+          CategoryCard(
+            title: 'Bars',
+            subtitle: 'Trouvez les meilleurs bars à proximité',
+            image: 'bar_image.jpg',
+          ),
+          CategoryCard(
+            title: 'Activités',
+            subtitle: 'Découvrez des activités passionnantes',
+            image: 'activity_image.jpg',
+          ),
+          
+          CategoryCard(
+            title: 'Jeunes de moins de 26 ans',
+            subtitle: 'Des avantages tarifaires exclusifs',
+            image: 'youth_image.jpg',
+          ),
+        ],
+      ),
               ),
             ),
           ],
         ),
       ),
     );
-  }
-}
