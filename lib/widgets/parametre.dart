@@ -28,5 +28,32 @@ class SettingsPage extends StatelessWidget {
               // Action lorsque "Mon compte" est cliqué
             },
           ),
-      
-  }}
+  ListTile(
+            title: Text('Confidentialité'),
+            onTap: () {
+              // Action lorsque "Confidentialité" est cliqué
+            },
+          ),
+          ListTile(
+            title: Text('Données personnelles'),
+            onTap: () {
+              // Action lorsque "Données personnelles" est cliqué
+            },
+          ),
+          ListTile(
+            title: Text('Abonnement'),
+            onTap: () {
+              // Action lorsque "Abonnement" est cliqué
+            },
+          ),
+          ListTile(
+            title: Text('Se déconnecter'),
+            onTap: () {
+              // Action lorsque "Se déconnecter" est cliqué
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
