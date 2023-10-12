@@ -48,7 +48,7 @@ class ProductPage extends StatelessWidget {
                   SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
-                      // Action lorsqu'on appuie sur le bouton "Ajouter au panier"
+                     
                     },
                     child: Text('Ajouter au panier'),
                   ),
@@ -71,3 +71,20 @@ class ProductPage extends StatelessWidget {
                 SizedBox(height: 8),
                 Text('Titre du lieu'),
                 SizedBox(height: 16),
+
+                 Expanded(
+            flex: 4,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'Lieu du produit',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                  SizedBox(height: 8),
+                Text('Titre du lieu'),
+                SizedBox(height: 16),
+
+                
