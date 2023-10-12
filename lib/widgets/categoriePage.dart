@@ -27,13 +27,11 @@ class CategoriesPage extends StatelessWidget {
             subtitle: 'Trouvez les meilleurs bars à proximité',
             image: 'bar_image.jpg',
           ),
-
-           CategoryCard(
+          CategoryCard(
             title: 'Activités',
             subtitle: 'Découvrez des activités passionnantes',
             image: 'activity_image.jpg',
           ),
-          
         ],
       ),
     );
@@ -45,7 +43,8 @@ class CategoryCard extends StatelessWidget {
   final String subtitle;
   final String image;
 
-    CategoryCard({required this.title, required this.subtitle, required this.image});
+  CategoryCard(
+      {required this.title, required this.subtitle, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -68,29 +67,47 @@ class CategoryCard extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(subtitle),
-                ], ListView(
-        children: <Widget>[
-          CategoryCard(
-            title: 'Bars',
-            subtitle: 'Trouvez les meilleurs bars à proximité',
-            image: 'bar_image.jpg',
-          ),
-          CategoryCard(
-            title: 'Activités',
-            subtitle: 'Découvrez des activités passionnantes',
-            image: 'activity_image.jpg',
-          ),
-          
-          CategoryCard(
-            title: 'Jeunes de moins de 26 ans',
-            subtitle: 'Des avantages tarifaires exclusifs',
-            image: 'youth_image.jpg',
-          ),
-        ],
-      ),
+                ],
+                ListView(
+                  children: <Widget>[
+                    CategoryCard(
+                      title: 'Bars',
+                      subtitle: 'Trouvez les meilleurs bars à proximité',
+                      image: 'bar_image.jpg',
+                    ),
+                    CategoryCard(
+                      title: 'Activités',
+                      subtitle: 'Découvrez des activités passionnantes',
+                      image: 'activity_image.jpg',
+                    ),
+                    CategoryCard(
+                      title: 'Jeunes de moins de 26 ans',
+                      subtitle: 'Des avantages tarifaires exclusifs',
+                      image: 'youth_image.jpg',
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
         ),
       ),
     );
+
+      Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: places.length,
+      itemBuilder: (context, index) {
+        final place = places[index];
+        return ListTile(
+          leading: Image.asset(place.imagePath, width: 50, height: 50), // Image du lieu
+          title: Text(place.name),
+          subtitle: Text(place.address),
+          trailing: Text('${place.distance} km'),
+        );
+      },
+    );
+  }
+
+  }
+}
