@@ -27,3 +27,20 @@ class CategoriesPage extends StatelessWidget {
             subtitle: 'Trouvez les meilleurs bars à proximité',
             image: 'bar_image.jpg',
           ),
+
+           CategoryCard(
+            title: 'Activités',
+            subtitle: 'Découvrez des activités passionnantes',
+            image: 'activity_image.jpg',
+          ),
+          // Ajoutez d'autres catégories ici
+        ],
+      ),
+    );
+  }
+}
+
+class CategoryCard extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final String image;
